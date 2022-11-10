@@ -1,0 +1,256 @@
+<div class="row" style="padding: 30px;">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-header">
+        <h3>Editar Articulos</h3>
+      </div>
+      <div class="card-body">
+        <form class="row g-3">
+
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Codigo de Asociado</label>
+            <input [(ngModel)]="articulo.cod_asociado" name="cod_asociado" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Id de Clasificacion</label>
+            <input [(ngModel)]="articulo.id_clasificacion" name="id_clasificacion" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Codigo Interno</label>
+            <input [(ngModel)]="articulo.cod_interno" name="cod_interno" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Codigo de Descripcion</label>
+            <input [(ngModel)]="articulo.cod_descripcion" name="cod_descripcion" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Descripcion Corta</label>
+            <input [(ngModel)]="articulo.descripcion_corta" name="descripcion_corta" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Cantidad um </label>
+            <input [(ngModel)]="articulo.cantidad_um" name="antidad_um" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Id id_unidad</label>
+            <input [(ngModel)]="articulo.id_unidad" name="id_unidad" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Id Proveedor</label>
+            <input [(ngModel)]="articulo.id_proveedor" name="id_proveedor" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Precio Compra</label>
+            <input [(ngModel)]="articulo.precio_compra" name="precio_compra" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Utilidad</label>
+            <input [(ngModel)]="articulo.utilidad" name="utilidad" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Precio Venta</label>
+            <input [(ngModel)]="articulo.precio_venta" name="precio_venta" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Tipo de Articulo</label>
+            <input [(ngModel)]="articulo.tipo_articulo" name="tipo_articulo" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Stock</label>
+            <input [(ngModel)]="articulo.stock" name="stock" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Stock_Min</label>
+            <input [(ngModel)]="articulo.stock_min" name="stock_min" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Stock_max</label>
+            <input [(ngModel)]="articulo.stock_max" name="stock_max" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Iva</label>
+            <input [(ngModel)]="articulo.iva" name="iva" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Fecha de Inicio</label>
+            <p-calendar [(ngModel)]="articulo.kit_fecha_ini" name="kit_fecha_ini"></p-calendar>
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Fecha de Fin</label>
+            <input [(ngModel)]="articulo.kit_fecha_fin" name="kit_fecha_fin" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Articulo Disponible</label>
+            <input [(ngModel)]="articulo.articulo_disponible" name="articulo_disponible" type="text"
+              class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Kit</label>
+            <input [(ngModel)]="articulo.kit" name="kit" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Fecha de Registro</label>
+            <input [(ngModel)]="articulo.fecha_registro" name="fecha_registro" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Articulo Visible</label>
+            <input [(ngModel)]="articulo.visible" name="visible" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Puntos</label>
+            <input [(ngModel)]="articulo.puntos" name="puntos" type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Ultima Actualizacion de Inventario</label>
+            <p-calendar [(ngModel)]="articulo.last_update_inventory" name="last_update_inventory"></p-calendar>
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Clave del producto</label>
+            <input [(ngModel)]="articulo.cve_producto" name="cve_producto" type="text" class="form-control">
+          </div>
+          <button (click)="Actualizar(articulo)" class=" btn btn-danger">Guardar</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header">
+        <h3>Detalles Articulos</h3>
+      </div>
+      <div class="card-body">
+
+        <b><label class="form-label">Codigo de Barras:</label></b>
+        <label for="inputEmail4" class="form-label">{{articulo1.cod_barras}}</label>
+        <br>
+
+
+        <b><label class="form-label">Codigo de Asociado:</label></b>
+        <label for="inputEmail4" class="form-label">{{articulo1.cod_asociado}}</label>
+        <br>
+
+        <b><label class="form-label">Id de Clasificacion:</label></b>
+        <label for="inputEmail5" class="form-label">{{articulo1.id_clasificacion}}</label>
+        <br>
+
+        <b><label class="form-label">Codigo Interno:</label></b>
+        <label for="inputEmail16" class="form-label">{{articulo1.cod_interno}}</label>
+        <br>
+
+        <label class="form-label">Codigo de Descripcion:</label>
+        <label for="inputEmail7" class="form-label">{{articulo1.cod_descripcion}</label>
+        <br>
+
+        <label class="form-label">Descripcion Corta:</label>
+        <label for="inputEmail8" class="form-label">{{articulo1.descripcion_corta}}</label>
+        <br>
+
+        <label class="form-label">Cantidad um:</label>
+        <label for="inputEmail9" class="form-label">{{articulo1.cantidad_um}}</label>
+        <br>
+
+        <label class="form-label">Id id_unidad:</label>
+        <label for="inputEmail20" class="form-label">{{articulo1.id_unidad}}</label>
+        <br>
+
+        <label class="form-label">Id Proveedor:</label>
+        <label for="" class="form-label">{{articulo1.id_proveedor}}</label>
+        <br>
+
+        <label class="form-label">Precio Compra:</label>
+        <label for="" class="form-label">{{articulo1.precio_compra}}</label>
+        <br>
+
+        <label class="form-label">Utilidad:</label>
+        <label for="" class="form-label">{{articulo1.utilidad}}</label>
+        <br>
+
+        <label class="form-label">Precio Venta:</label>
+        <label for="" class="form-label">{{articulo1.precio_venta}}</label>
+        <br>
+
+        <label class="form-label">Tipo de Articulo:</label>
+        <label for="" class="form-label">{{articulo1.tipo_articulo}}</label>
+        <br>
+
+        <label class="form-label">Stock:</label>
+        <label for="" class="form-label">{{articulo1.stock}}</label>
+        <br>
+
+        <label class="form-label">Stock_Min:</label>
+        <label for="" class="form-label">{{articulo1.stock_min}}</label>
+        <br>
+
+        <label class="form-label">Stock_max:</label>
+        <label for="" class="form-label">{{articulo1.stock_max}}</label>
+        <br>
+
+        <label class="form-label">Iva:</label>
+        <label for="" class="form-label">{{articulo1.iva}}</label>
+        <br>
+
+        <label class="form-label">Fecha de Inicio:</label>
+        <label for="" class="form-label">{{articulo1.kit_fecha_ini}}</label>
+        <br>
+
+        <label class="form-label">Fecha de Fin:</label>
+        <label for="" class="form-label">{{articulo1.kit_fecha_fin}}</label>
+        <br>
+
+        <label class="form-label">Articulo Disponible:</label>
+        <label for="" class="form-label">{{articulo1.articulo_disponible}}</label>
+        <br>
+
+        <label class="form-label">Kit:</label>
+        <label for="" class="form-label">{{articulo1.kit}}</label>
+        <br>
+
+        <label class="form-label">Fecha de Registro:</label>
+        <label for="" class="form-label">{{articulo1.fecha_registro}}</label>
+        <br>
+
+        <label class="form-label">Articulo Visible:</label>
+        <label for="" class="form-label">{{articulo1.visible}}</label>
+        <br>
+
+        <label class="form-label">Puntos:</label>
+        <label for="" class="form-label">{{articulo1.puntos}}</label>
+        <br>
+
+        <label class="form-label">Ultima Actualizacion de Inventario:</label>
+        <label for="" class="form-label">{{articulo1.last_update_inventory}}</label>
+        <br>
+
+        <label class="form-label">Clave del producto:</label>
+        <label for="" class="form-label">{{articulo1.cve_producto}}</label>
+
+
+      </div>
+    </div>
+  </div>
+</div>
